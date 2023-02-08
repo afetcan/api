@@ -1,0 +1,125 @@
+{
+  "name": "@acildeprem/api",
+  "private": false,
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Api for acildeprem.com",
+  "author": "Mehmet - productdevbook <hi@productdevbook.com>",
+  "license": "Apache",
+  "homepage": "https://github.com/acildeprem/#readme",
+  "packageManager": "pnpm@7.26.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acildeprem/api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acildeprem/api/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=v18.10.0",
+    "pnpm": ">=7.26.3"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rimraf dist && rimraf node_modules",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx .",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx . --fix",
+    "release": "bumpp --commit --push --tag && pnpm publish",
+    "graphql:generate": "graphql-codegen",
+    "generate": "pnpm graphql:generate",
+    "postinstall": "pnpm generate"
+  },
+  "peerDependencies": {
+    "@abraham/reflection": "^0.12.0",
+    "graphql": "16.6.0"
+  },
+  "dependencies": {
+    "@abraham/reflection": "^0.12.0",
+    "@acildeprem/storage": "0.0.8",
+    "@aws-sdk/client-s3": "^3.264.0",
+    "@aws-sdk/s3-request-presigner": "^3.264.0",
+    "@clickhouse/client": "^0.0.12",
+    "@envelop/generic-auth": "^5.0.4",
+    "@envelop/graphql-modules": "^4.0.4",
+    "@envelop/response-cache-redis": "^2.0.5",
+    "@graphql-tools/links": "^8.3.29",
+    "@graphql-tools/resolvers-composition": "^6.5.16",
+    "@graphql-tools/schema": "^9.0.15",
+    "@huntersofbook/relay-cursor-paging": "^1.0.0",
+    "blurhash": "^2.0.4",
+    "dataloader": "^2.2.1",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0",
+    "geojson": "^0.5.0",
+    "graphql": "16.6.0",
+    "graphql-modules": "^2.1.0",
+    "graphql-relay": "^0.10.0",
+    "graphql-scalars": "^1.20.1",
+    "graphql-yoga": "^3.5.1",
+    "ioredis": "^5.3.0",
+    "knex": "^2.4.2",
+    "merge-anything": "^5.1.4",
+    "nanoid": "^4.0.1",
+    "pathe": "^1.1.0",
+    "sharp": "^0.31.3",
+    "supertokens-node": "^12.1.6",
+    "uuid": "^9.0.0",
+    "wait-on": "^7.0.1",
+    "wkx": "^0.5.0",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.1",
+    "@graphql-codegen/add": "^4.0.0",
+    "@graphql-codegen/cli": "^3.0.0",
+    "@graphql-codegen/graphql-modules-preset": "^3.0.0",
+    "@graphql-codegen/typescript": "^3.0.0",
+    "@graphql-codegen/typescript-operations": "^3.0.0",
+    "@graphql-codegen/typescript-resolvers": "^3.0.0",
+    "graphql-codegen-typescript-validation-schema": "^0.7.1",
+    "@faker-js/faker": "^7.6.0",
+    "@types/node": "^18.11.19",
+    "@types/sharp": "^0.31.1",
+    "@types/uuid": "^9.0.0",
+    "@types/wait-on": "^5.3.1",
+    "bumpp": "^8.2.1",
+    "consola": "^2.15.3",
+    "eslint": "^8.33.0",
+    "tslib": "^2.5.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vitest": "^0.28.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "graphql": "16.6.0"
+    },
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "graphql": "16.6.0"
+      }
+    }
+  },
+  "resolutions": {
+    "graphql": "16.6.0"
+  }
+}

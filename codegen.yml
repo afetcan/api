@@ -1,0 +1,70 @@
+overwrite: true
+schema: './src/modules/*/module.graphql.ts'
+generates:
+  # Specify where our generated types should live.
+  ./src/modules:
+    preset: graphql-modules
+    presetConfig:
+      baseTypesPath: ../__generated__/types.ts
+      filename: __generated__/types.ts
+      encapsulateModuleTypes: namespace
+    plugins:
+      - add: { content: '// THIS FILE IS GENERATED, DO NOT EDIT!' }
+      - add: { content: '/* eslint-disable eslint-comments/no-unlimited-disable */' }
+      - add: { content: '/* tslint:disable */' }
+      - add: { content: '/* eslint-disable */' }
+      - add: { content: '// @ts-nocheck' }
+      - "typescript"
+      - "typescript-resolvers"
+      - "typescript-operations"
+    config:
+      mappers:
+        User: '@acildeprem/storage#UserEntity'
+      useIndexSignature: true
+      maybeValue: T | undefined
+      # More on this below!
+      contextType: GraphQLModules.ModuleContext
+      scalars:
+        Cursor: string
+        Date: Date
+        DateTime: Date
+        File: File
+        JSON: JSON
+        Timestamp: Date
+  
+  # ./packages/storage/src/type.ts:
+  #   plugins:
+  #       - add: { content: '// THIS FILE IS GENERATED, DO NOT EDIT!' }
+  #       - add: { content: '/* eslint-disable eslint-comments/no-unlimited-disable */' }
+  #       - add: { content: '/* tslint:disable */' }
+  #       - add: { content: '/* eslint-disable */' }
+  #       - add: { content: '// @ts-nocheck' }
+  #       - "typescript"
+  #   config:
+  #     maybeValue: T | undefined
+  #     scalars:
+  #       Cursor: string
+  #       Date: Date
+  #       DateTime: Date
+  #       File: File
+  #       JSON: JSON
+  #       Timestamp: Date
+
+  
+  
+  # ./graphql/__generated__/validation.internal.ts:
+  #   plugins:
+  #     - add: { content: '// THIS FILE IS GENERATED, DO NOT EDIT!' }
+  #     - add: { content: '/* eslint-disable eslint-comments/no-unlimited-disable */' }
+  #     - add: { content: '/* tslint:disable */' }
+  #     - add: { content: '/* eslint-disable */' }
+  #     - add: { content: '// @ts-nocheck' }
+  #     - "typescript-validation-schema"
+  #   config:
+  #     schema: 'zod'
+  #     scalarSchemas:
+  #       Date: 'zod.date()'
+  #       DateTime: 'zod.date()'
+  #       EmailAddress: 'zod.string().email()'
+  #       ID: 'zod.string().uuid()'
+  #     importFrom: './types.js'
