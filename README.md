@@ -9,7 +9,7 @@
 </p>
 
 
-`@acildeprem/api` TANIMI
+`@acildeprem/api` server paketi olmadan sadece apilerin ve servislerin bulunduğu pakettir. Servis paketleri içine `@acildeprem/storage` paketinden gelen db algorithmlarını kullanıyoruz. Client tarafında gerekli olan tüm yapıları buradan çıkıyor. Dilersek bu apiyi genişletip farklı bir şekilde kullanabiliriz. 
 
 ## NPM Paketi
 
