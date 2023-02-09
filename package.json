@@ -44,8 +44,7 @@
     "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx . --fix",
     "release": "bumpp --commit --push --tag && pnpm publish",
     "graphql:generate": "graphql-codegen",
-    "generate": "pnpm graphql:generate",
-    "postinstall": "pnpm generate"
+    "generate": "pnpm graphql:generate"
   },
   "peerDependencies": {
     "@abraham/reflection": "^0.12.0",
