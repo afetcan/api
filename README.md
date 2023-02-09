@@ -1,4 +1,4 @@
-# STORAGE AÇIKLAMASI
+# API AÇIKLAMASI
 
 <p>
       <a href="https://www.npmjs.com/package/@acildeprem/api"><img src="https://img.shields.io/npm/v/@acildeprem/api.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Version"></a>
