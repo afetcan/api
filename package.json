@@ -74,7 +74,6 @@
     "graphql-scalars": "^1.20.1",
     "graphql-yoga": "^3.5.1",
     "ioredis": "^5.3.0",
-    "knex": "^2.4.2",
     "merge-anything": "^5.1.4",
     "nanoid": "^4.0.1",
     "pathe": "^1.1.0",
