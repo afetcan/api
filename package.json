@@ -2,7 +2,7 @@
   "name": "@acildeprem/api",
   "private": false,
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Api for acildeprem.com",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "license": "Apache",
