@@ -20,7 +20,7 @@ export default <Options>{
   sourcemap: true,
   clean: true,
   minify: isProduction,
-  external: [...external, 'pg-native'],
+  external: [...external, 'pg-native', 'knex'],
   // noExternal,
   // skipNodeModulesBundle: true,
   dts: true,
