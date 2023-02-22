@@ -1,6 +1,6 @@
 import { Inject, Injectable, Scope } from 'graphql-modules'
 import { EntityManager } from '@mikro-orm/postgresql'
-import { ResultInterface } from '@acildeprem/storage'
+import { ResultInterface } from '@afetcan/storage'
 import { GraphQLError } from 'graphql'
 import { MIKRO_ORM_INSTANCE } from '../../shared/providers/mikro-orm'
 import { CreateEmergencyInput, Emergency } from '../../../__generated__/types'

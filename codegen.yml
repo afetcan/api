@@ -19,7 +19,7 @@ generates:
       - "typescript-operations"
     config:
       mappers:
-        User: '@acildeprem/storage#UserEntity'
+        User: '@afetcan/storage#UserEntity'
       useIndexSignature: true
       maybeValue: T | undefined
       # More on this below!

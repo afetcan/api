@@ -1,6 +1,6 @@
 import { GraphQLError } from 'graphql'
 import { CONTEXT, Inject, Injectable, Scope } from 'graphql-modules'
-import { UserEntity } from '@acildeprem/storage'
+import { UserEntity } from '@afetcan/storage'
 import { HStorage } from '../../shared/providers/storage'
 import type { Context, SuperTokenSessionPayload } from '../../../context'
 import { Logger } from '../../shared/providers/logger'

@@ -1,5 +1,5 @@
 import { Injectable } from 'graphql-modules'
-import type { Storage as IStorage } from '@acildeprem/storage'
+import type { Storage as IStorage } from '@afetcan/storage'
 
 export interface HStorage extends IStorage { }
 

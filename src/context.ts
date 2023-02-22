@@ -1,6 +1,6 @@
 import type { EntityManager } from '@mikro-orm/postgresql'
 import type { FastifyReply, FastifyRequest } from 'fastify'
-// import type { LibraryEntity } from '@@acildeprem/storage'
+// import type { LibraryEntity } from '@@afetcan/storage'
 import zod from 'zod'
 import type { PubSub as TPubSub } from 'graphql-yoga'
 import type { Redis } from 'ioredis'
