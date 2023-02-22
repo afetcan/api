@@ -1,19 +1,19 @@
 {
-  "name": "@acildeprem/api",
+  "name": "@afetcan/api",
   "private": false,
   "type": "module",
   "version": "0.0.5",
-  "description": "Api for acildeprem.com",
+  "description": "Api for afetcan.com",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "license": "Apache",
-  "homepage": "https://github.com/acildeprem/#readme",
+  "homepage": "https://github.com/afetcan/#readme",
   "packageManager": "pnpm@7.26.3",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acildeprem/api.git"
+    "url": "git+https://github.com/afetcan/api.git"
   },
   "bugs": {
-    "url": "https://github.com/acildeprem/api/issues"
+    "url": "https://github.com/afetcan/api/issues"
   },
   "exports": {
     ".": {
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@abraham/reflection": "^0.12.0",
-    "@acildeprem/storage": "0.0.17",
+    "@afetcan/storage": "0.0.18",
     "@aws-sdk/client-s3": "^3.264.0",
     "@aws-sdk/s3-request-presigner": "^3.264.0",
     "@clickhouse/client": "^0.0.12",

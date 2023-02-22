@@ -1,35 +1,35 @@
-# API AÇIKLAMASI
+# API
 
 <p>
-      <a href="https://www.npmjs.com/package/@acildeprem/api"><img src="https://img.shields.io/npm/v/@acildeprem/api.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Version"></a>
-      <a href="https://www.npmjs.com/package/@acildeprem/api"><img src="https://img.shields.io/npm/dm/@acildeprem/api.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Downloads"></a>
-      <a href="./LICENSE"><img src="https://img.shields.io/github/license/acildeprem/storage.svg?style=flat&colorA=002438&colorB=28CF8D" alt="License"></a>
-      <a href="https://github.com/acildeprem/api">
-      <img src="https://img.shields.io/github/stars/acildeprem/api.svg?style=social&label=Star&maxAge=2592000" alt="Github Stars"> </a>
+      <a href="https://www.npmjs.com/package/@afetcan/api"><img src="https://img.shields.io/npm/v/@afetcan/api.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Version"></a>
+      <a href="https://www.npmjs.com/package/@afetcan/api"><img src="https://img.shields.io/npm/dm/@afetcan/api.svg?style=flat&colorA=002438&colorB=28CF8D" alt="Downloads"></a>
+      <a href="./LICENSE"><img src="https://img.shields.io/github/license/afetcan/storage.svg?style=flat&colorA=002438&colorB=28CF8D" alt="License"></a>
+      <a href="https://github.com/afetcan/api">
+      <img src="https://img.shields.io/github/stars/afetcan/api.svg?style=social&label=Star&maxAge=2592000" alt="Github Stars"> </a>
 </p>
 
 
-`@acildeprem/api` server paketi olmadan sadece apilerin ve servislerin bulunduğu pakettir. Servis paketleri içine `@acildeprem/storage` paketinden gelen db algorithmlarını kullanıyoruz. Client tarafında gerekli olan tüm yapıları buradan çıkıyor. Dilersek bu apiyi genişletip farklı bir şekilde kullanabiliriz. 
+`@afetcan/APİ` It is the package containing only api and services without the server package. We use the DB algorithms from the `@afetcan/Storage` package into service packages. All the necessary structures on the client side come from here. If we wish, we can expand this api and use it in a different way.
 
-## NPM Paketi
+## NPM
 
 
-### Kurulum
+### Setup
 ```bash
-pnpm install @acildeprem/api
+pnpm install @afetcan/api
 ```
 
-###  Kullanım
+### Usage
 ```ts
-import { ... } from '@acildeprem/api' 
+import { ... } from '@afetcan/api' 
 ```
 
-## Gereksinimler
+## Requirements
 
 - [Node.js](https://nodejs.org/en/) 18.0.0+
 - [pnpm](https://pnpm.io/) 7.26.3+
 
-## Kullandığımız teknolojiler
+## Dependencies
 - [abraham/reflection 0.12.0](https://www.npmjs.com/package/@abraham/reflection)
 - [AWS 3.264.0](https://aws.amazon.com/tr/sdk-for-javascript/)
 - [clickhouse 0.0.12](https://clickhouse.com/docs/en/intro/)
@@ -38,9 +38,9 @@ import { ... } from '@acildeprem/api'
 - [huntersofbook/relay-cursor-paging 1.0.0](https://www.npmjs.com/package/@huntersofbook/relay-cursor-paging)
 - [Faker 7.6.0](https://fakerjs.dev/guide/)
 
-## Local Geliştirme - Development
+## Local Development
 
-### Kurulum
+### Setup
 ```bash
 pnpm install
 ```
@@ -55,9 +55,8 @@ pnpm dev
 pnpm build
 ```
 
+# Links
 
-# Linkler
-
-- [Web Sitesi](https://acildeprem.com)
-- [Discord](https://discord.acildeprem.com)
-- [Twitter](https://twitter.com/acildepremcom)
+- [Web Sitesi](https://afetcan.com)
+- [Discord](https://discord.afetcan.com)
+- [Twitter](https://twitter.com/afetcancom)
