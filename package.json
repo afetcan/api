@@ -2,7 +2,7 @@
   "name": "@afetcan/api",
   "private": false,
   "type": "module",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Api for afetcan.com",
   "author": "Mehmet - productdevbook <hi@productdevbook.com>",
   "license": "Apache",
